@@ -10,12 +10,12 @@
     <title>Document</title>
 </head>
 
-<body class="flex  mx-auto w-[768px] flex-col"> 
+<body class="flex flex-col mx-auto min-w-fit">
     <!-- DO SOMETHING WITH THIS SHIT WIDTH -->
     <header class="bg-Header flex-auto h-[1024px] ">
 
         <ul
-            class="grid grid-flow-col justify-between auto-cols-max ml-8 text-base leading-5 text-white uppercase mt-5 mr-8 font-semibold">
+            class="grid justify-between grid-flow-col mt-5 ml-8 mr-8 text-base font-semibold leading-5 text-white uppercase auto-cols-max">
             <li class="">школы</li>
             <li>программы</li>
             <li>визы</li>
@@ -25,12 +25,12 @@
 
         <img src="./img/svg/Rectangle.svg" alt="" class="mt-4 ml-8">
 
-        <div class="grid grid-flow-col auto-cols-max items-end gap-3">
+        <div class="grid items-end grid-flow-col gap-3 auto-cols-max">
 
             <img src="./img/svg/logo.svg" alt="logo" class="ml-8 mt-8 mr-[8.688rem]">
 
             <input type="submit" value="Заявка"
-                class="bg-button-color w-32 h-12 text-lg leading-5 text-white rounded-full shadow-buttonShadow">
+                class="w-32 h-12 text-lg leading-5 text-white rounded-full bg-button-color shadow-buttonShadow">
             <input type="submit" value=""
                 class="h-12 w-12 bg-button-color rounded-full bg-[url('../img/svg/icons/phone.svg')] bg-no-repeat bg-center">
             <input type="submit" value=""
@@ -41,14 +41,14 @@
             <input type="submit" value=""
                 class="h-11 w-11 bg-button-color rounded-full bg-[url('../img/svg/icons/Arrow-left.svg')] bg-no-repeat bg-center">
 
-            <p class="text-white text-4xl leading-9 text-center font-semibold ">Обучение и образование за<br> рубежом
+            <p class="text-4xl font-semibold leading-9 text-center text-white ">Обучение и образование за<br> рубежом
                 для детей и взрослых</p>
 
             <input type="submit" value=""
                 class="h-11 w-11 bg-button-color rounded-full bg-[url('../img/svg/icons/Arrow-right.svg')] bg-no-repeat bg-center">
         </div>
 
-        <div class="grid grid-cols-contentSize-2 grid-rows-2  justify-center mt-12">
+        <div class="grid justify-center grid-rows-2 mt-12 grid-cols-contentSize-2">
             <li
                 class="w-[16.6rem] grid grid-flow-col items-center justify-items-center h-16 bg-white list-none text-base leading-5 text-menu-color border-r-menuBorder border-r-2 border-b-2 border-b-menuBorder rounded-tl-lg">
                 <img src="./img/svg/icons/Globus.svg" alt=""><span>Страна обучения</span><img
@@ -69,26 +69,26 @@
 
             <div
                 class="bg-button-color w-[16.6rem] h-16 text-lg leading-5 text-center uppercase text-white rounded-tr-lg rounded-br-lg  ">
-                <span class="relative top-6 font-semibold">Показать</span>
+                <span class="relative font-semibold top-6">Показать</span>
             </div>
 
         </div>
 
-        <div class="grid grid-cols-contentSize-4 grid-flow-col mt-52 mr-8 ml-8 justify-between">
+        <div class="grid justify-between grid-flow-col ml-8 mr-8 grid-cols-contentSize-4 mt-52">
 
-            <p class="text-lg leading-5 font-semibold  text-white">
+            <p class="text-lg font-semibold leading-5 text-white">
                 <span class="text-6xl leading-[59px] text-Numbers">10+</span><br>Лет<br>опыта
             </p>
 
-            <p class="text-lg leading-5 font-semibold text-white">
+            <p class="text-lg font-semibold leading-5 text-white">
                 <span class="text-6xl leading-[59px] text-Numbers">500+</span><br>учебных<br>заведений
             </p>
 
-            <p class="text-lg leading-5 font-semibold text-white">
+            <p class="text-lg font-semibold leading-5 text-white">
                 <span class="text-6xl leading-[59px] text-Numbers">1500+</span><br>Программ<br>обучения
             </p>
 
-            <p class="text-lg leading-5 font-semibold text-white">
+            <p class="text-lg font-semibold leading-5 text-white">
                 <span class="text-6xl leading-[59px] text-Numbers">100%</span><br>зачисленных и<br>поступивших
             </p>
 
@@ -106,7 +106,7 @@
 
         <h1 class="font-bold text-4xl leading-9 text-white text-center mt-[4.37rem]">Обучение за рубежом</h1>
 
-        <p class="text-lg leading-6 text-center  text-white mt-8 mr-8 ml-8 ">
+        <p class="mt-8 ml-8 mr-8 text-lg leading-6 text-center text-white ">
             Компания Booking Study помогает получить современное образование за рубежом для детей и взрослых. Мы
             организуем обучение за рубежом по направлениям: языковые курсы, начальное, среднее и высшее образование.
             В каталоге более 500 учебных заведений с описанием стоимости обучения, условий проживания, инфраструктуры
@@ -118,19 +118,52 @@
             принимающих семьях. Обратившись к нам, вы узнаете, как стать студентом элитного европейского или
             американского университета и сколько стоит образование в разных странах. Стоимость обучения за рубежом на
             нашем сайте строго соответствует ценам учебных заведений за границей.<br><br>
-            <span class="text-2xl leading-8 font-semibold ">Мы предлагаем 5 видов образования за рубежом:</span>
+            <span class="text-2xl font-semibold leading-8 ">Мы предлагаем 5 видов образования за рубежом:</span>
         </p>
 
-        <ol class="text-xl leading-7 grid grid-cols-2 grid-rows-3  text-white list-disc list-inside ">
+        <ol
+            class="grid items-start grid-cols-2 grid-rows-3 mt-8 ml-20 text-xl leading-7 text-left text-white list-disc list-outside mr-9 marker:border-r-4 list marker:text-button-color gap-x-6">
             <!-- Доделатб -->
             <li>Среднее образование в школах-пансионах для детей от 7 лет</li>
-            <li>Высшее образование в США, Англии, Канаде</li>
-            <li>Языковые курсы английского, немецкого, французского, испанского или итальянского</li>
             <li>Каникулы за рубежом в приключенческом лагере</li>
+            <li>Высшее образование в США, Англии, Канаде</li>
             <li>Бизнес курсы иностранного языка для предпринимателей</li>
+            <li>Языковые курсы английского, немецкого, французского, испанского или итальянского</li>
+
+
         </ol>
 
     </main>
+
+    <section class="h-[676px] bg-white">
+
+        <p class="font-bold text-4xl leading-7 ml-8 mt-[4.375rem] text-menu-color ">Большой выбор учебных заведений</p>
+
+        <p class="mt-2 ml-8 text-lg font-semibold leading-5 tracking-wide text-LighGray">в странах только с высоким рейтингом по качеству образования</p>
+
+        <div class="grid justify-between grid-flow-col mt-8 ml-8 mr-8 grid-cols-contentSize-4 ">
+            <div class="pt-3 pb-3 pl-5 pr-5 mx-auto text-sm font-semibold leading-4 text-white bg-red-900 bg-no-repeat rounded-full ">Все</div>
+            <div class="pt-3 pb-3 pl-5 mx-auto pr-5 text-sm font-semibold leading-4 bg-no-repeat text-white bg-[url('../img/Brit-button.png')] rounded-full">Великобритания</div>
+            <div class="pt-3 pb-3 pl-5 mx-auto pr-5 text-sm font-semibold leading-4 bg-no-repeat text-white bg-[url('../img/Europe-button.png')] rounded-full">Европа</div>
+            <div class="pt-3 pb-3 pl-5 mx-auto pr-5 text-sm font-semibold leading-4 bg-no-repeat text-white bg-[url('../img/usa-button.png')] rounded-full">Америка</div>
+            <div class="pt-3 pb-3 pl-5 mx-auto pr-5 text-sm font-semibold leading-4 bg-no-repeat text-white bg-[url('../img/canada-button.png')] rounded-full">Канада</div>
+            <div class="pt-3 pb-3 pl-5 mx-auto pr-5 text-sm font-semibold leading-4 bg-no-repeat text-white bg-[url('../img/asia-button.png')] rounded-full">Азия</div>
+        </div>
+
+        <div class="flex flex-row gap-8 mt-6 ml-8 mr-8">
+            <div class="w-Card h-Card rounded bg-no-repeat  bg-[url('../img/Aus-card.png')]">
+                <img src="./img/svg/icons/Aus-flag.svg" alt="" class="float-left"><p class="text-xl font-semibold leading-7 text-white ">Австрия</p>
+            </div>
+            <div class="w-Card h-Card rounded bg-no-repeat  bg-[url('../img/Eng-card.png')]">
+                <img src="./img/svg/icons/Eng-flag.svg" alt="" class="float-left"><p class="text-xl font-semibold leading-7 text-white ">Англия</p>
+            </div>
+            <div class="w-Card h-Card rounded bg-no-repeat  bg-[url('../img/Belg-card.png')]">
+                <img src="./img/svg/icons/Belg-flag.svg" alt="" class="float-left"><p class="text-xl font-semibold leading-7 text-white ">Бельгия</p>
+            </div>
+        </div>
+
+
+    </section>
 
     <footer>
 

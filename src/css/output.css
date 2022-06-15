@@ -1,5 +1,5 @@
 /*
-! tailwindcss v3.1.2 | MIT License | https://tailwindcss.com
+! tailwindcss v3.1.3 | MIT License | https://tailwindcss.com
 */
 
 /*
@@ -600,17 +600,21 @@ video {
   top: 1.5rem;
 }
 
+.float-left {
+  float: left;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
 }
 
-.ml-8 {
-  margin-left: 2rem;
-}
-
 .mt-5 {
   margin-top: 1.25rem;
+}
+
+.ml-8 {
+  margin-left: 2rem;
 }
 
 .mr-8 {
@@ -643,6 +647,26 @@ video {
 
 .mt-\[4\.37rem\] {
   margin-top: 4.37rem;
+}
+
+.ml-20 {
+  margin-left: 5rem;
+}
+
+.mr-9 {
+  margin-right: 2.25rem;
+}
+
+.mt-\[4\.375rem\] {
+  margin-top: 4.375rem;
+}
+
+.mt-2 {
+  margin-top: 0.5rem;
+}
+
+.mt-6 {
+  margin-top: 1.5rem;
 }
 
 .flex {
@@ -681,8 +705,12 @@ video {
   height: 939px;
 }
 
-.w-\[768px\] {
-  width: 768px;
+.h-\[676px\] {
+  height: 676px;
+}
+
+.h-Card {
+  height: 17.501rem;
 }
 
 .w-32 {
@@ -701,12 +729,22 @@ video {
   width: 16.6rem;
 }
 
+.w-Card {
+  width: 13.342rem;
+}
+
+.min-w-fit {
+  min-width: -webkit-fit-content;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
+}
+
 .flex-auto {
   flex: 1 1 auto;
 }
 
-.list-inside {
-  list-style-position: inside;
+.list-outside {
+  list-style-position: outside;
 }
 
 .list-none {
@@ -748,8 +786,16 @@ video {
   grid-template-rows: repeat(3, minmax(0, 1fr));
 }
 
+.flex-row {
+  flex-direction: row;
+}
+
 .flex-col {
   flex-direction: column;
+}
+
+.items-start {
+  align-items: flex-start;
 }
 
 .items-end {
@@ -780,8 +826,25 @@ video {
   gap: 1.65rem;
 }
 
+.gap-7 {
+  gap: 1.75rem;
+}
+
+.gap-8 {
+  gap: 2rem;
+}
+
+.gap-x-6 {
+  -moz-column-gap: 1.5rem;
+       column-gap: 1.5rem;
+}
+
 .rounded-full {
   border-radius: 9999px;
+}
+
+.rounded {
+  border-radius: 0.25rem;
 }
 
 .rounded-tl-lg {
@@ -828,6 +891,11 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.bg-red-900 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(127 29 29 / var(--tw-bg-opacity));
+}
+
 .bg-Header {
   background-image: url('../img/Header_bg.png');
 }
@@ -852,12 +920,64 @@ video {
   background-image: url(../img/Main_bg.png);
 }
 
+.bg-\[url\(\'\.\.\/img\/Brit-button\.png\'\)\] {
+  background-image: url('../img/Brit-button.png');
+}
+
+.bg-\[url\(\'\.\.\/img\/Europe-button\.png\'\)\] {
+  background-image: url('../img/Europe-button.png');
+}
+
+.bg-\[url\(\'\.\.\/img\/usa-button\.png\'\)\] {
+  background-image: url('../img/usa-button.png');
+}
+
+.bg-\[url\(\'\.\.\/img\/canada-button\.png\'\)\] {
+  background-image: url('../img/canada-button.png');
+}
+
+.bg-\[url\(\'\.\.\/img\/asia-button\.png\'\)\] {
+  background-image: url('../img/asia-button.png');
+}
+
+.bg-\[url\(\'\.\.\/img\/Eng-card\.png\'\)\] {
+  background-image: url('../img/Eng-card.png');
+}
+
+.bg-\[url\(\'\.\.\/img\/Belg-card\.png\'\)\] {
+  background-image: url('../img/Belg-card.png');
+}
+
+.bg-\[url\(\'\.\.\/img\/Aus-card\.png\'\)\] {
+  background-image: url('../img/Aus-card.png');
+}
+
 .bg-center {
   background-position: center;
 }
 
 .bg-no-repeat {
   background-repeat: no-repeat;
+}
+
+.pt-3 {
+  padding-top: 0.75rem;
+}
+
+.pb-3 {
+  padding-bottom: 0.75rem;
+}
+
+.pl-5 {
+  padding-left: 1.25rem;
+}
+
+.pr-5 {
+  padding-right: 1.25rem;
+}
+
+.text-left {
+  text-align: left;
 }
 
 .text-center {
@@ -892,6 +1012,11 @@ video {
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
 }
 
 .font-semibold {
@@ -930,6 +1055,14 @@ video {
   line-height: 1.75rem;
 }
 
+.leading-4 {
+  line-height: 1rem;
+}
+
+.tracking-wide {
+  letter-spacing: 0.025em;
+}
+
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
@@ -945,8 +1078,29 @@ video {
   color: rgb(16 159 203 / var(--tw-text-opacity));
 }
 
+.text-LighGray {
+  --tw-text-opacity: 1;
+  color: rgb(121 126 157 / var(--tw-text-opacity));
+}
+
 .shadow-buttonShadow {
   --tw-shadow: 0px 7px 13px rgba(255, 53, 60, 0.25);
   --tw-shadow-colored: 0px 7px 13px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.marker\:border-r-4 *::marker {
+  border-right-width: 4px;
+}
+
+.marker\:text-button-color *::marker {
+  color: rgb(255 53 60 );
+}
+
+.marker\:border-r-4::marker {
+  border-right-width: 4px;
+}
+
+.marker\:text-button-color::marker {
+  color: rgb(255 53 60 );
 }

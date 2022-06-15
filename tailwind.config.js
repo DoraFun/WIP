@@ -11,6 +11,8 @@ module.exports = {
         'button-color': "#FF353C",
         'menu-color': '#383A49',
         'Numbers': '#109FCB',
+        'LighGray': "#797E9D",
+        
       },
       boxShadow: {
         'buttonShadow': "0px 7px 13px rgba(255, 53, 60, 0.25)",
@@ -18,11 +20,19 @@ module.exports = {
       },
       gridTemplateColumns: {
         'contentSize-2': "repeat(2, max-content)",
-        'contentSize-4': "repeat(4, max-content)"
+        'contentSize-4': "repeat(4, max-content)",
+        'contentSize-5': "repeat(5, max-content)",
       },
       borderColor: {
         'menuBorder': '#E9EEF1',
-      }
+      },
+      width: {
+        'Card': '13.342rem'
+      },
+      height: {
+        'Card': "17.501rem"
+      },
+
     
     },
   },
