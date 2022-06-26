@@ -12,29 +12,35 @@
 
 <body class="flex flex-col mx-auto min-w-fit">
     <!-- DO SOMETHING WITH THIS SHIT WIDTH -->
-    <header class="bg-Header flex-auto h-[1024px] ">
+    <div>
+        
+    </div>
+    <header class="bg-Header bg-cover why:bg-big_header why:bg-cover flex-auto h-[1024px] why:h-[720px] ">
 
         <ul
-            class="grid justify-between grid-flow-col mt-5 ml-8 mr-8 text-base font-semibold leading-5 text-white uppercase auto-cols-max">
+            class="grid justify-between grid-flow-col mt-5 ml-8 mr-8 text-base font-semibold leading-5 text-white uppercase why:ml-36 why:mr-36 auto-cols-max">
             <li class="">школы</li>
             <li>программы</li>
             <li>визы</li>
             <li>контакты</li>
-            <li class="">+7 (495) 966 41 33</li>
+            <li class="why:hidden">+7 (495) 966 41 33</li>
         </ul>
 
-        <img src="./img/svg/Rectangle.svg" alt="" class="mt-4 ml-8">
+        <img src="./img/svg/Rectangle.svg" alt="" class="mt-4 ml-8 ">
 
-        <div class="grid items-end grid-flow-col gap-3 auto-cols-max">
+        <div class="grid items-end grid-flow-col gap-3 mr-9 why:mr-[152px]">
 
             <img src="./img/svg/logo.svg" alt="logo" class="ml-8 mt-8 mr-[8.688rem]">
+            <div class="flex flex-row gap-x-3 ">
+                <p class="hidden mb-3 text-xl leading-6 text-white inv ">+7 (495) 966 41 33</p>
+                <input type="submit" value="Заявка"
+                    class="w-32 h-12 text-lg leading-5 text-white rounded-full bg-button-color shadow-buttonShadow">
+                <input type="submit" value=""
+                    class="h-12 w-12 bg-button-color rounded-full bg-[url('../img/svg/icons/phone.svg')] bg-no-repeat bg-center">
+                <input type="submit" value=""
+                    class="bg-white w-12 h-12 rounded-full bg-[url('../img/svg/icons/Поиск.svg')] bg-no-repeat bg-center">
+            </div>
 
-            <input type="submit" value="Заявка"
-                class="w-32 h-12 text-lg leading-5 text-white rounded-full bg-button-color shadow-buttonShadow">
-            <input type="submit" value=""
-                class="h-12 w-12 bg-button-color rounded-full bg-[url('../img/svg/icons/phone.svg')] bg-no-repeat bg-center">
-            <input type="submit" value=""
-                class="bg-white w-12 h-12 rounded-full bg-[url('../img/svg/icons/Поиск.svg')] bg-no-repeat bg-center">
         </div>
 
         <div class="grid grid-flow-col mt-[14.688rem] auto-cols-max items-center ml-8 mr-8 justify-between">
@@ -122,7 +128,7 @@
 
     </section>
 
-    <main class="bg-[url(../img/Main_bg.png)] h-[939px] flex flex-col">
+    <main class="bg-[url(../img/Main_bg.png)] why:bg-[url(../img/Big_main_bg.png)] bg-cover why:bg-center h-[939px] flex flex-col">
 
         <h1 class="font-bold text-4xl leading-9 text-white text-center mt-[4.37rem]">Обучение за рубежом</h1>
 
@@ -162,7 +168,9 @@
         <p class="mt-2 ml-8 text-lg font-semibold leading-5 tracking-wide text-LighGray">в странах только с высоким
             рейтингом по качеству образования</p>
 
-        <div class="grid justify-between grid-flow-col mt-8 ml-8 mr-8 grid-cols-contentSize-4 ">
+        <!-- <div class="grid items-start justify-between grid-flow-col mt-8 ml-8 mr-8 grid-cols-contentSize-4 "> -->
+        <!-- <div class="flex flex-row mt-8 ml-8 mr-8 "> -->
+        <div class="grid items-center grid-flow-col gap-5 mt-8 ml-8 grid-cols-contentSize-6 justify-items-end mr-36 justify-evenly ">
             <div
                 class="pt-3 pb-3 pl-5 pr-5 mx-auto text-sm font-semibold leading-4 text-white bg-red-900 bg-no-repeat rounded-full ">
                 Все</div>
@@ -181,9 +189,21 @@
             <div
                 class="pt-3 pb-3 pl-5 mx-auto pr-5 text-sm font-semibold leading-4 bg-no-repeat text-white bg-[url('../img/asia-button.png')] rounded-full">
                 Азия</div>
+
+
+            <div class="justify-center hidden gap-5 why:flex ">
+
+                <button
+                    class="rounded-full shadow-buttonShadow-2 w-11 h-11 bg-no-repeat bg-center  bg-[url('../img/svg/icons/black_arrow_left.svg')]"></button>
+
+                <button
+                    class="rounded-full shadow-buttonShadow-2 w-11 h-11 bg-no-repeat bg-center bg-menu-color bg-[url('../img/svg/icons/Arrow-right.svg')]"></button>
+
+            </div>
+
         </div>
 
-        <div class="flex flex-row gap-8 mt-6 ml-8 mr-8">
+        <div class="flex flex-row items-center gap-8 mt-6 ml-8 mr-8 justify-evenly">
             <div class="w-Card h-Card rounded bg-no-repeat  bg-[url('../img/Aus-card.png')]">
                 <img src="./img/svg/icons/Aus-flag.svg" alt="" class="float-left">
                 <p class="text-xl font-semibold leading-7 text-white ">Австрия</p>
@@ -195,13 +215,17 @@
             <div class="w-Card h-Card rounded bg-no-repeat  bg-[url('../img/Belg-card.png')]">
                 <img src="./img/svg/icons/Belg-flag.svg" alt="" class="float-left">
                 <p class="text-xl font-semibold leading-7 text-white ">Бельгия</p>
+
             </div>
 
-
+            <div class="w-Card h-Card rounded bg-no-repeat hidden why:block  bg-[url('../img/Eng-card.png')]">
+                <img src="./img/svg/icons/Ger_flag.svg" alt="" class="float-left">
+                <p class="text-xl font-semibold leading-7 text-white ">Германия</p>
+            </div>
 
         </div>
 
-        <div class="flex justify-center gap-5 mt-12">
+        <div class="flex justify-center gap-5 mt-12 why:hidden">
 
             <button
                 class="rounded-full shadow-buttonShadow-2 w-11 h-11 bg-no-repeat bg-center  bg-[url('../img/svg/icons/black_arrow_left.svg')]"></button>
@@ -214,9 +238,9 @@
 
     </section>
 
-    <section class="bg-[url('../img/content5_bg.png')] h-[563px]">
+    <section class="bg-[url('../img/content5_bg.png')] bg-center bg-cover  ">
 
-        <h2 class="mt-16 text-4xl font-bold leading-9 text-center text-white shadow-textShadow">Подготовим к учебе за
+        <h2 class="text-4xl font-bold leading-9 text-center text-white shadow-textShadow mt-14 ">Подготовим к учебе за
             рубежом</h2>
 
         <ul
@@ -232,7 +256,7 @@
             <!-- Список хуйня, переделать -->
         </ul>
 
-        <p class="mt-12 ml-8 mr-8 text-lg leading-5 text-center text-white">Наши менеджеры помогут вам сделать
+        <!-- <p class="mt-12 ml-8 mr-8 text-lg leading-5 text-center text-white">Наши менеджеры помогут вам сделать
             правильный выбор!</p>
 
         <div class="flex flex-row items-center justify-center gap-8 mt-5">
@@ -240,6 +264,21 @@
                 class="h-12 text-lg leading-5 text-white rounded-full w-52 bg-button-color shadow-buttonShadow">Оставить
                 заявку</button>
             <p class="text-2xl leading-8 text-white"> / +7 (495) 966-41-33</p>
+        </div> -->
+
+        <div class="grid items-center justify-center mt-5 mb-20 why:items-end why:grid-cols-contentSize-3 grid-cols-contentSize-2 grid-rows-contentSize-2 gap-y-5 justify-items-center">
+
+            <p class="col-start-1 col-end-3 mt-12 ml-8 mr-8 text-lg leading-5 text-center text-white why:col-end-1 ">Наши менеджеры помогут вам<br class="hidden why:block"> сделать
+                правильный выбор!
+            </p>
+
+            <button
+                class="h-12 text-lg leading-5 text-white rounded-full w-52 bg-button-color shadow-buttonShadow">Оставить
+                заявку
+            </button>
+
+            <p class="pb-2 text-2xl leading-8 text-white why:ml-10"> / +7 (495) 966-41-33</p>
+
         </div>
 
 
@@ -264,6 +303,17 @@
             <button
                 class="text-lg font-bold leading-3 underline text-Button-Gray decoration-BorderGray underline-offset-8">Каникулы
                 за рубежом</button>
+
+                <div class="justify-center hidden gap-5 why:flex">
+
+                    <button
+                        class="rounded-full shadow-buttonShadow-2 w-11 h-11 bg-no-repeat bg-center  bg-[url('../img/svg/icons/black_arrow_left.svg')]"></button>
+        
+                    <button
+                        class="rounded-full shadow-buttonShadow-2 w-11 h-11 bg-no-repeat bg-center bg-menu-color bg-[url('../img/svg/icons/Arrow-right.svg')]"></button>
+        
+                </div>
+
         </ul>
 
         <div class="grid grid-cols-2 ml-8 mr-8 gap-x-10 mt-7">
@@ -283,7 +333,7 @@
                 границей.</p>
         </div>
 
-        <div class="flex justify-center gap-5 mt-7">
+        <div class="flex justify-center gap-5 mt-7 why:hidden">
 
             <button
                 class="rounded-full shadow-buttonShadow-2 w-11 h-11 bg-no-repeat bg-center  bg-[url('../img/svg/icons/black_arrow_left.svg')]"></button>
@@ -322,9 +372,19 @@
                     class="text-lg font-bold leading-3 underline text-Button-Gray decoration-BorderGray underline-offset-8">Виза</button>
             </div>
 
+            <div class="justify-center hidden gap-5 why:flex">
+
+                <button
+                    class="rounded-full shadow-buttonShadow-2 w-11 h-11 bg-no-repeat bg-center  bg-[url('../img/svg/icons/black_arrow_left.svg')]"></button>
+    
+                <button
+                    class="rounded-full shadow-buttonShadow-2 w-11 h-11 bg-no-repeat bg-center bg-menu-color bg-[url('../img/svg/icons/Arrow-right.svg')]"></button>
+    
+            </div>
+
         </ul>
 
-        <div class="grid grid-cols-2 mt-10 ml-8 mr-8 gap-x-6">
+        <div class="grid grid-cols-2 mt-10 ml-8 mr-8 gap-x-6 why:mb-20">
             <div
                 class="w-[337px] h-[394px] border-2 border-BorderGray rounded-xl flex flex-col  pl-7 pr-7 pt-7 gap-y-4 items-start">
 
@@ -378,7 +438,7 @@
             </div>
         </div>
 
-        <div class="flex justify-center gap-5 mt-12 mb-14">
+        <div class="flex justify-center gap-5 mt-12 mb-14 why:hidden">
 
             <button
                 class="rounded-full shadow-buttonShadow-2 w-11 h-11 bg-no-repeat bg-center  bg-[url('../img/svg/icons/black_arrow_left.svg')]"></button>
