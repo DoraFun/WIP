@@ -18,23 +18,33 @@
     <header class="bg-Header bg-cover why:bg-big_header why:bg-cover flex-auto h-[1024px] why:h-[720px] ">
 
         <ul
-            class="grid items-end justify-between grid-flow-col grid-rows-2 mt-5 ml-8 mr-8 text-base font-semibold leading-5 text-white uppercase justify-items-center why:ml-36 why:mr-36 why:grid-cols-4 auto-cols-max">
+            class="grid items-end justify-between grid-flow-col grid-cols-4 mt-5 ml-8 mr-8 text-base font-semibold leading-5 text-white uppercase 1366:items-center 1366:grid-cols-9 justify-items-center ">
+            <img src="./img/svg/logo.svg" alt="logo" class="hidden mt-8 1366:mt-0 1366:block ">
             <li class="">школы</li>
             <li>программы</li>
             <li>визы</li>
             <li>контакты</li>
-            <li class="why:hidden">+7 (495) 966 41 33</li>
+            <li class="hidden 1366:block">+7 (495) 966 41 33</li>
 
-            <img src="./img/svg/Rectangle.svg" alt="" class="col-start-1 col-end-6 row-start-2 row-end-2 w-[95%]">
+            <img src="./img/svg/Rectangle.svg" alt=""
+                class="col-start-1 col-end-6 row-start-2 row-end-2 w-[95%] 1366:invisible">
+
+            <input type="submit" value="Заявка"
+                class="hidden w-32 h-12 text-lg leading-5 text-white rounded-full bg-button-color shadow-buttonShadow 1366:list-item 1366:col-start-7">
+            <input type="submit" value=""
+                class="h-12 w-12 bg-button-color rounded-full bg-[url('../img/svg/icons/phone.svg')] bg-no-repeat hidden 1366:list-item bg-center 1366:col-start-8">
+            <input type="submit" value=""
+                class="bg-white w-12 h-12 rounded-full bg-[url('../img/svg/icons/Поиск.svg')] bg-no-repeat hidden 1366:list-item bg-center 1366:col-start-9">
+
         </ul>
 
 
 
-        <div class="grid items-end grid-flow-col gap-3 mr-9 why:mr-[152px]">
+        <div class="grid items-end justify-around grid-flow-col gap-3 mr-9 1366:hidden ">
 
-            <img src="./img/svg/logo.svg" alt="logo" class="ml-8 mt-8 mr-[8.688rem]">
+            <img src="./img/svg/logo.svg" alt="logo" class="mt-8 ">
             <div class="flex flex-row gap-x-3 ">
-                <p class="hidden mb-3 text-xl leading-6 text-white inv ">+7 (495) 966 41 33</p>
+                <p class="hidden pt-2 text-xl leading-6 text-white why:block ">+7 (495) 966 41 33</p>
                 <input type="submit" value="Заявка"
                     class="w-32 h-12 text-lg leading-5 text-white rounded-full bg-button-color shadow-buttonShadow">
                 <input type="submit" value=""
@@ -45,7 +55,8 @@
 
         </div>
 
-        <div class="grid grid-flow-col mt-[14.688rem] why:mt-28 gap-8 auto-cols-max justify-center items-center ml-8 mr-8 ">
+        <div
+            class="grid grid-flow-col mt-[14.688rem] why:mt-28 gap-8 auto-cols-max justify-center items-center ml-8 mr-8 ">
             <input type="submit" value=""
                 class="h-11 w-11 bg-button-color rounded-full bg-[url('../img/svg/icons/Arrow-left.svg')] bg-no-repeat bg-center">
 
@@ -56,33 +67,35 @@
                 class="h-11 w-11 bg-button-color rounded-full bg-[url('../img/svg/icons/Arrow-right.svg')] bg-no-repeat bg-center">
         </div>
 
-        <div class="grid justify-center grid-rows-2 mt-12 why:grid-cols-contentSize-4 why:grid-rows-1 grid-cols-contentSize-2">
+        <div
+            class="grid justify-center grid-rows-2 mt-12 why:grid-cols-contentSize-4 why:grid-rows-1 grid-cols-contentSize-2">
             <li
-                class="w-[16.6rem] grid grid-flow-col items-center justify-items-center h-16 bg-white list-none text-base leading-5 text-menu-color border-r-menuBorder border-r-2 border-b-2 border-b-menuBorder rounded-tl-lg">
+                class="w-[16.6rem] grid grid-flow-col items-center justify-items-center h-16 bg-white list-none text-base leading-5 text-menu-color border-r-menuBorder border-r-2 border-b-2 border-b-menuBorder why:rounded-none rounded-tl-lg">
                 <img src="./img/svg/icons/Globus.svg" alt=""><span>Страна обучения</span><img
                     src="./img/svg/icons/Arrow-down.svg" alt="">
             </li>
 
             <li
-                class="w-[16.6rem] grid grid-flow-col items-center justify-center h-16 gap-[1.65rem] bg-white list-none text-base leading-5 text-menu-color border-b-menuBorder border-b-2 rounded-tr-lg">
+                class="w-[16.6rem] grid grid-flow-col why:rounded-none items-center justify-center h-16 gap-[1.65rem] bg-white list-none text-base leading-5 text-menu-color border-b-menuBorder border-b-2 rounded-tr-lg">
                 <img src="./img/svg/icons/hat.svg" alt=""><span>Вид образования</span><img
                     src="./img/svg/icons/Arrow-down.svg" alt="">
             </li>
 
             <li
-                class="w-[16.6rem] grid grid-flow-col items-center justify-center h-16 gap-[1.65rem] bg-white list-none text-base leading-5 text-menu-color border-r-menuBorder border-r-2 rounded-bl-lg">
+                class="w-[16.6rem] grid grid-flow-col why:rounded-none items-center justify-center h-16 gap-[1.65rem] bg-white list-none text-base leading-5 text-menu-color border-r-menuBorder border-r-2 rounded-bl-lg">
                 <img src="./img/svg/icons/tongue.svg" alt=""><span>Иностранный язык</span><img
                     src="./img/svg/icons/Arrow-down.svg" alt="">
             </li>
 
             <div
-                class="bg-button-color w-[16.6rem] h-16 text-lg leading-5 text-center uppercase text-white rounded-tr-lg rounded-br-lg  ">
+                class="bg-button-color why:rounded-none  w-[16.6rem] h-16 text-lg leading-5 text-center uppercase text-white rounded-tr-lg rounded-br-lg  ">
                 <span class="relative font-semibold top-6">Показать</span>
             </div>
 
         </div>
 
-        <div class="grid justify-between grid-flow-col ml-8 mr-8 grid-cols-contentSize-4 mt-52 why:mt-24">
+        <div
+            class="grid justify-center grid-flow-col gap-12 ml-8 mr-8 why:gap-20 grid-cols-contentSize-4 mt-52 why:mt-24">
 
             <p class="text-lg font-semibold leading-5 text-white">
                 <span class="text-6xl leading-[59px] text-Numbers">10+</span><br>Лет<br>опыта
@@ -107,7 +120,7 @@
     </header>
     <!-- grid grid-flow-row grid-rows-2 grid-cols-7 -->
     <section
-        class="bg-white h-[247px]  text-base grid grid-flow-row grid-rows-2 grid-cols-5 justify-items-center gap-x-12 gap-y-7 overflow-x-scroll leading-5 text-center text-Dark-gray mt-8 ml-11 mr-16  ">
+        class="bg-white h-[247px]  text-base grid grid-flow-row grid-rows-2 grid-cols-5 justify-items-center gap-x-12 gap-y-7 leading-5 text-center text-Dark-gray mt-8 ml-11 mr-16  ">
 
         <img class="w-16" src="./img/svg/icons/Phone_svg.svg" alt="">
         <img class="w-16" src="./img/svg/icons/money_svg.svg" alt="">
@@ -173,8 +186,7 @@
 
         <!-- <div class="grid items-start justify-between grid-flow-col mt-8 ml-8 mr-8 grid-cols-contentSize-4 "> -->
         <!-- <div class="flex flex-row mt-8 ml-8 mr-8 "> -->
-        <div
-            class="grid items-center grid-flow-col gap-5 mt-8 ml-8 grid-cols-contentSize-6 justify-items-end mr-36 justify-evenly ">
+        <div class="grid items-center grid-flow-col gap-5 mt-8 ml-8 grid-cols-contentSize-6 justify-items-end mr-36 ">
             <div
                 class="pt-3 pb-3 pl-5 pr-5 mx-auto text-sm font-semibold leading-4 text-white bg-red-900 bg-no-repeat rounded-full ">
                 Все</div>
@@ -207,7 +219,8 @@
 
         </div>
 
-        <div class="flex flex-row items-center gap-8 mt-6 ml-8 mr-8 justify-evenly">
+        <!-- space-evenly -->
+        <div class="flex flex-row items-center gap-8 mt-6 ml-8 mr-8">
             <div class="w-Card h-Card rounded bg-no-repeat  bg-[url('../img/Aus-card.png')]">
                 <img src="./img/svg/icons/Aus-flag.svg" alt="" class="float-left">
                 <p class="text-xl font-semibold leading-7 text-white ">Австрия</p>
@@ -226,6 +239,18 @@
                 <img src="./img/svg/icons/Ger_flag.svg" alt="" class="float-left">
                 <p class="text-xl font-semibold leading-7 text-white ">Германия</p>
             </div>
+
+            <div class="w-Card h-Card rounded bg-no-repeat hidden why:block  bg-[url('../img/irl_card.jpg')]">
+                <img src="./img/svg/icons/irl_flag.jpg" alt="" class="float-left">
+                <p class="text-xl font-semibold leading-7 text-white ">Ирландия</p>
+            </div>
+
+            <!-- <div class="w-Card h-Card rounded bg-no-repeat hidden why:block  bg-[url('../img/sp_card.png')]">
+                <img src="./img/svg/icons/sp_flag.svg" alt="" class="float-left">
+                <p class="text-xl font-semibold leading-7 text-white ">Испания</p>
+            </div> -->
+
+            <!-- Да хуй знает как сделать оверфлоу нормально, пусть пока так будет -->
 
         </div>
 
@@ -390,7 +415,7 @@
 
         </ul>
 
-        <div class="grid mt-10 ml-8 mr-8 grid-cols-contentSize-2 gap-x-9 why:mb-20">
+        <div class="grid mt-10 ml-8 mr-8 grid-cols-contentSize-3 gap-x-9 why:mb-20">
             <div
                 class="w-[337px] h-[394px] border-2 border-BorderGray rounded-xl flex flex-col  pl-7 pr-7 pt-7 gap-y-4 items-start">
 
@@ -433,7 +458,7 @@
                 </div>
 
                 <div class="flex flex-row gap-x-5">
-                    <img src="./img/svg/icons/Round_gr.svg" alt="">
+                    <img src="./img/svg/icons/round_belg.png" alt="">
                     <a href=""
                         class="text-lg font-semibold leading-5 underline text-link decoration-link underline-offset-4">France
                         Langue Paris Notre</a>
@@ -443,7 +468,36 @@
                 <img src="./img/Anton.png" alt="" class="absolute right-8">
             </div>
 
-            
+            <div
+                class="w-[400px] h-[320px] border-2 hidden border-BorderGray rounded-xl why:flex flex-col  pl-7 pr-7 pt-7 gap-y-4 items-start">
+
+                <div class="flex flex-row gap-x-10">
+                    <p class="text-2xl font-semibold leading-8 text-menu-color">Виктория Шукалович</p>
+                    <img src="./img/ViKa.png" alt="" class="w-[60px] h-[60px]">
+
+                </div>
+
+                <div class="relative flex flex-row gap-x-5 right-1">
+                    <img src="./img/svg/icons/Gr_hat.svg" alt="">
+                    <p class="relative text-lg font-semibold leading-5 right-1 text-Button-Gray ">Получение визы</p>
+                </div>
+
+                <div class="flex flex-row gap-x-5">
+                    <img src="./img/svg/icons/round_eng.png" alt="">
+                    <a href=""
+                        class="text-lg font-semibold leading-5 underline text-link decoration-link underline-offset-4">Англия</a>
+                </div>
+
+                <p class="text-lg leading-5 text-Dark-gray">Рекомендую всем Booking-study, благодаря профессиональной и
+                    четкой работе которых мы с женой получили визы в Великобританию даже раньше установленного срока и
+                    успели к открытию конференции.
+
+
+
+                </p>
+            </div>
+
+
 
         </div>
 
@@ -496,7 +550,8 @@
         <p class="mt-5 text-base font-semibold text-center text-LighGray">Наши эксперты помогут подобрать программу
             обучения за рубежом, а также окажут профессиональную информационную поддержку во время учебы.</p>
 
-        <form action="" class="grid grid-cols-2 grid-rows-3 mt-8 w-[700px] mx-auto border-t-2 rounded-md border-BorderGray">
+        <form action=""
+            class="grid grid-cols-2 grid-rows-3 mt-8 w-[700px] mx-auto border-t-2 rounded-md border-BorderGray">
 
             <div
                 class=" h-[80px] grid grid-rows-contentSize-2 text-base leading-5 border-b-2 border-r-2 grid-cols-contentSize-5 text-menu-color gap-x-5  pl-6 pt-5 border-l-2">
@@ -543,7 +598,8 @@
 
     </section>
 
-    <footer class="grid grid-flow-col grid-cols-3 text-sm leading-4 grid-rows-8 text-LighGray ml-5 mt-[261px]">
+    <footer
+        class="grid grid-flow-col grid-cols-3 text-sm leading-4 grid-rows-8 text-LighGray ml-5 mt-[261px] why:mt-24">
 
         <a href="" class="uppercase">выбор страны обучения</a>
         <a href="" class="uppercase">Учебные заведения</a>
@@ -564,7 +620,8 @@
         <a href="" class="uppercase">контакты</a>
         <a href="" class="text-2xl font-semibold leading-7 uppercase text-menu-color">+7 (495) 966 41 33</a>
         <div class="flex flex-row items-start text-lg leading-5 text-menu-color gap-x-5"><img
-                src="./img/svg/icons/Subtract.svg" alt=""><a href="" class="mr-2">г. Москва, ул. Маленковская, 32/3, этаж 2, офис
+                src="./img/svg/icons/Subtract.svg" alt=""><a href="" class="mr-2">г. Москва, ул. Маленковская, 32/3,
+                этаж 2, офис
                 5</a></div>
         <div class="flex flex-row mt-2 ">
 

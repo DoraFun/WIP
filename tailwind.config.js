@@ -18,7 +18,8 @@ module.exports = {
 
       '2xl': '1536px',
       // => @media (min-width: 1536px) { ... }
-      
+      'fhd': '1920px',
+      "1366": '1366px',
     },
     extend: {
       backgroundImage: {
