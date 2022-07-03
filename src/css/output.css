@@ -711,12 +711,12 @@ video {
   margin-top: 13rem;
 }
 
-.ml-11 {
-  margin-left: 2.75rem;
-}
-
 .mr-16 {
   margin-right: 4rem;
+}
+
+.ml-11 {
+  margin-left: 2.75rem;
 }
 
 .mt-\[4\.37rem\] {
@@ -803,10 +803,6 @@ video {
   display: none;
 }
 
-.h-\[1024px\] {
-  height: 1024px;
-}
-
 .h-12 {
   height: 3rem;
 }
@@ -817,6 +813,26 @@ video {
 
 .h-16 {
   height: 4rem;
+}
+
+.h-Card {
+  height: 17.501rem;
+}
+
+.h-14 {
+  height: 3.5rem;
+}
+
+.h-\[60px\] {
+  height: 60px;
+}
+
+.h-\[80px\] {
+  height: 80px;
+}
+
+.h-\[1024px\] {
+  height: 1024px;
 }
 
 .h-\[247px\] {
@@ -831,14 +847,6 @@ video {
   height: 676px;
 }
 
-.h-Card {
-  height: 17.501rem;
-}
-
-.h-14 {
-  height: 3.5rem;
-}
-
 .h-\[394px\] {
   height: 394px;
 }
@@ -851,16 +859,8 @@ video {
   height: 320px;
 }
 
-.h-\[60px\] {
-  height: 60px;
-}
-
 .h-\[383px\] {
   height: 383px;
-}
-
-.h-\[80px\] {
-  height: 80px;
 }
 
 .w-\[95\%\] {
@@ -927,10 +927,20 @@ video {
   width: 3.5rem;
 }
 
+.w-fit {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
 .min-w-fit {
   min-width: -webkit-fit-content;
   min-width: -moz-fit-content;
   min-width: fit-content;
+}
+
+.max-w-full {
+  max-width: 100%;
 }
 
 .flex-auto {
@@ -1156,6 +1166,10 @@ video {
        column-gap: 0.5rem;
 }
 
+.overflow-x-hidden {
+  overflow-x: hidden;
+}
+
 .rounded-full {
   border-radius: 9999px;
 }
@@ -1347,6 +1361,10 @@ video {
   padding-top: 0.5rem;
 }
 
+.pb-16 {
+  padding-bottom: 4rem;
+}
+
 .pt-3 {
   padding-top: 0.75rem;
 }
@@ -1385,6 +1403,10 @@ video {
 
 .pt-5 {
   padding-top: 1.25rem;
+}
+
+.pb-20 {
+  padding-bottom: 5rem;
 }
 
 .text-left {
@@ -1631,12 +1653,12 @@ video {
     margin-top: 0px;
   }
 
-  .\31 366\:ml-0 {
-    margin-left: 0px;
+  .\31 366\:mr-20 {
+    margin-right: 5rem;
   }
 
-  .\31 366\:mr-0 {
-    margin-right: 0px;
+  .\31 366\:ml-20 {
+    margin-left: 5rem;
   }
 
   .\31 366\:block {
@@ -1663,14 +1685,6 @@ video {
 @media (min-width: 980px) {
   .why\:col-end-1 {
     grid-column-end: 1;
-  }
-
-  .why\:ml-36 {
-    margin-left: 9rem;
-  }
-
-  .why\:mr-36 {
-    margin-right: 9rem;
   }
 
   .why\:mt-28 {
@@ -1713,6 +1727,10 @@ video {
   .why\:grid-cols-contentSize-3 {
     grid-template-columns: repeat(3, -webkit-max-content);
     grid-template-columns: repeat(3, max-content);
+  }
+
+  .why\:grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
   .why\:grid-rows-1 {
