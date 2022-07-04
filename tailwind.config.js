@@ -36,6 +36,7 @@ module.exports = {
         'BorderGray': "#D6D6D6",
         'link': "#109FCB",
         'Dark-gray': "#666666",
+        'kindablue': "#109FCB"
         
       },
       boxShadow: {

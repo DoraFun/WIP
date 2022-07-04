@@ -10,7 +10,7 @@
     <title>Document</title>
 </head>
 
-<body class="flex flex-col mx-auto">
+<body class="flex flex-col mx-auto overflow-x-hidden">
     <!-- DO SOMETHING WITH THIS SHIT WIDTH -->
 
     <header class="bg-Header bg-cover why:bg-big_header why:bg-cover flex-auto h-[1024px] why:h-[720px] ">
@@ -54,7 +54,7 @@
         </div>
 
         <div
-            class="grid grid-flow-col mt-[14.688rem] why:mt-28 gap-8 auto-cols-max justify-center items-center ml-8 mr-8 ">
+            class="grid grid-flow-col mt-[14.688rem] why:mt-28 gap-8 auto-cols-max justify-between items-center ml-8 mr-8 ">
             <input type="submit" value=""
                 class="h-11 w-11 bg-button-color rounded-full bg-[url('../img/svg/icons/Arrow-left.svg')] bg-no-repeat bg-center">
 
@@ -74,7 +74,7 @@
             </li>
 
             <li
-                class=" grid grid-flow-col why:rounded-none items-center justify-center h-16 gap-[1.65rem] bg-white list-none text-base leading-5 text-menu-color border-b-menuBorder border-b-2 rounded-tr-lg">
+                class=" grid grid-flow-col why:rounded-none items-center justify-center h-16 gap-[1.65rem] bg-white list-none text-base leading-5 text-menu-color border-b-menuBorder why:border-r-2 border-b-2 rounded-tr-lg">
                 <img src="./img/svg/icons/hat.svg" alt=""><span>Вид образования</span><img
                     src="./img/svg/icons/Arrow-down.svg" alt="">
             </li>
@@ -86,7 +86,7 @@
             </li>
 
             <div
-                class="h-16 text-lg leading-5 text-center text-white uppercase rounded-tr-lg rounded-br-lg bg-button-color why:rounded-none ">
+                class="h-16 text-lg leading-5 text-center text-white uppercase rounded-br-lg bg-button-color why:rounded-none ">
                 <span class="relative font-semibold top-6">Показать</span>
             </div>
 
@@ -118,24 +118,58 @@
     </header>
     <!-- grid grid-flow-row grid-rows-2 grid-cols-7 -->
     <section
-        class="bg-white h-[247px]  text-base grid grid-flow-row grid-rows-2 grid-cols-5 justify-items-center gap-x-12 gap-y-7 leading-5 text-center text-Dark-gray mt-8 ml-11 mr-16  ">
+        class="bg-white h-[247px]  text-base grid grid-flow-col justify-items-center gap-x-12 mr-11 leading-5 text-center text-Dark-gray mt-8 ml-11 overflow-x-scroll why:overflow-x-hidden  ">
+    
+        <div class="flex flex-col items-center justify-around">
+            <img class="w-16 after:content" src="./img/svg/icons/Phone_svg.svg" alt="">
+            <p>WOW сервис</p>
+        </div>
 
-        <img class="w-16" src="./img/svg/icons/Phone_svg.svg" alt="">
-        <img class="w-16" src="./img/svg/icons/money_svg.svg" alt="">
-        <img class="w-16" src="./img/svg/icons/lupa_svg.svg" alt="">
-        <img class="w-16" src="./img/svg/icons/man_svg.svg" alt="">
-        <img class="w-16" src="./img/svg/icons/visa_svg.svg" alt="">
-        <img class="hidden w-16 " src="./img/svg/icons/sale_svg.svg" alt="">
-        <img class="hidden w-16 " src="./img/svg/icons/hat_svg.svg" alt="">
+        <div class="flex flex-col items-center justify-around">
+            <img class="w-16" src="./img/svg/icons/money_svg.svg" alt="">
+            <p>Официальные цены учебных заведений</p>
+        </div>
+
+        <div class="flex flex-col items-center justify-around">
+            <img class="w-16" src="./img/svg/icons/lupa_svg.svg" alt="">
+            <p>Строгий отбор образовательных учереждений</p>
+        </div>
+
+        <div class="flex flex-col items-center justify-around">
+            <img class="w-16" src="./img/svg/icons/man_svg.svg" alt="">
+            <p>Личный менежер</p>
+        </div>
+
+        <div class="flex flex-col items-center justify-around">
+            <img class="w-16" src="./img/svg/icons/visa_svg.svg" alt="">
+            <p>Визовые услуги любой сложности</p>
+        </div>
+
+        <div class="flex flex-col items-center justify-around">
+            <img class="w-16 " src="./img/svg/icons/sale_svg.svg" alt="">
+            <p class="">Скидки до 10% для постоянных клиентов</p>
+        </div>
+
+        <div class="flex flex-col items-center justify-around">
+            <img class="w-16 " src="./img/svg/icons/hat_svg.svg" alt="">
+            <p class="">Поступление и зачисление в зарубежный ВУЗ</p>
+        </div>
 
 
-        <p>WOW сервис</p>
-        <p>Официальные цены учебных заведений</p>
-        <p>Строгий отбор образовательных учереждений</p>
-        <p>Личный менежер</p>
-        <p>Визовые услуги любой сложности</p>
-        <p class="hidden">Скидки до 10% для постоянных клиентов</p>
-        <p class="hidden">Поступление и зачисление в зарубежный ВУЗ</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -184,7 +218,7 @@
 
         <!-- <div class="grid items-start justify-between grid-flow-col mt-8 ml-8 mr-8 grid-cols-contentSize-4 "> -->
         <!-- <div class="flex flex-row mt-8 ml-8 mr-8 "> -->
-        <div class="grid items-center grid-flow-col gap-5 mt-8 ml-8 grid-cols-contentSize-6 justify-items-end mr-36 ">
+        <div class="grid items-center grid-flow-col gap-5 mt-8 ml-8 mr-6 grid-cols-contentSize-6 justify-items-end ">
             <div
                 class="pt-3 pb-3 pl-5 pr-5 mx-auto text-sm font-semibold leading-4 text-white bg-red-900 bg-no-repeat rounded-full ">
                 Все</div>
@@ -218,37 +252,42 @@
         </div>
 
         <!-- space-evenly -->
-        <div class="flex flex-row items-center gap-8 mt-6 ml-8 mr-8">
-            <div class="w-Card h-Card rounded bg-no-repeat  bg-[url('../img/Aus-card.png')]">
+        <div class="grid items-center grid-flow-col gap-8 mt-6 ml-8 mr-8 overflow-x-scroll ">
+            <div class="w-Card h-Card rounded bg-no-repeat   bg-[url('../img/Aus-card.png')] relative">
                 <img src="./img/svg/icons/Aus-flag.svg" alt="" class="float-left">
                 <p class="text-xl font-semibold leading-7 text-white ">Австрия</p>
+                <p class="absolute text-base font-semibold leading-5 text-white left-4 top-2/3">Английский,<br>Немецкий<br><span class="text-2xl">от 167 560 ₽</span></p>
             </div>
-            <div class="w-Card h-Card rounded bg-no-repeat  bg-[url('../img/Eng-card.png')]">
+            <div class="w-Card h-Card rounded bg-no-repeat  bg-[url('../img/Eng-card.png')] relative">
                 <img src="./img/svg/icons/Eng-flag.svg" alt="" class="float-left">
                 <p class="text-xl font-semibold leading-7 text-white ">Англия</p>
+                <p class="absolute text-base font-semibold leading-5 text-white left-4 top-3/4">Английский<br><span class="text-2xl">от 74 560 ₽</span></p>
             </div>
-            <div class="w-Card h-Card rounded bg-no-repeat  bg-[url('../img/Belg-card.png')]">
+            <div class="w-Card h-Card rounded bg-no-repeat  bg-[url('../img/Belg-card.png')] relative">
                 <img src="./img/svg/icons/Belg-flag.svg" alt="" class="float-left">
                 <p class="text-xl font-semibold leading-7 text-white ">Бельгия</p>
-
+                <p class="absolute text-base font-semibold leading-5 text-white left-4 top-2/3">Английский, Немецкий,<br>Французкий,<br><span class="text-2xl">от 64 560 ₽</span></p>
             </div>
 
-            <div class="w-Card h-Card rounded bg-no-repeat hidden why:block  bg-[url('../img/Eng-card.png')]">
+            <div class="w-Card h-Card rounded bg-no-repeat hidden why:block  bg-[url('../img/Eng-card.png')] relative">
                 <img src="./img/svg/icons/Ger_flag.svg" alt="" class="float-left">
                 <p class="text-xl font-semibold leading-7 text-white ">Германия</p>
+                <p class="absolute text-base font-semibold leading-5 text-white left-4 top-3/4">Английский, Немецкий<br><span class="text-2xl">от 104 560 ₽</span></p>
             </div>
 
-            <!-- <div class="w-Card h-Card rounded bg-no-repeat hidden why:block  bg-[url('../img/irl_card.jpg')]">
+             <div class="w-Card h-Card rounded bg-no-repeat hidden why:block  bg-[url('../img/irl_card.jpg')] relative">
                 <img src="./img/svg/icons/irl_flag.jpg" alt="" class="float-left">
                 <p class="text-xl font-semibold leading-7 text-white ">Ирландия</p>
-            </div> -->
+                <p class="absolute text-base font-semibold leading-5 text-white left-4 top-3/4">Английский<br><span class="text-2xl">от 54 560 ₽</span></p>
+            </div> 
 
-            <!-- <div class="w-Card h-Card rounded bg-no-repeat hidden why:block  bg-[url('../img/sp_card.png')]">
+             <div class="w-Card h-Card rounded bg-no-repeat hidden why:block  bg-[url('../img/sp_card.png')] relative">
                 <img src="./img/svg/icons/sp_flag.svg" alt="" class="float-left">
                 <p class="text-xl font-semibold leading-7 text-white ">Испания</p>
-            </div> -->
+                <p class="absolute text-base font-semibold leading-5 text-white left-4 top-3/4">Английский, Немецкий<br><span class="text-2xl">от 167 560 ₽</span></p>
+            </div> 
 
-            <!-- Да хуй знает как сделать оверфлоу нормально, пусть пока так будет -->
+
 
         </div>
 
@@ -321,7 +360,7 @@
                 рубежом</h3>
         </div>
 
-        <ul class="flex gap-10 ml-8 mt-11">
+        <ul class="grid grid-flow-col gap-10 ml-8 mr-6 grid-cols-contentSize-4 justify-items-end mt-11">
             <button
                 class="h-14 font-bold text-center text-base leading-3 text-white rounded-full w-[119px] bg-button-color shadow-buttonShadow">Среднее</button>
             <button
@@ -377,7 +416,7 @@
     <section>
         <h4 class="text-4xl leading-7 text-menu-color ml-8 mt-[77px] font-bold">Отзывы</h4>
 
-        <ul class="flex items-center mt-8 ml-8 gap-7">
+        <ul class="grid items-center grid-flow-col gap-10 ml-8 mr-6 grid-cols-contentSize-4 justify-items-end mt-11">
             <div>
                 <button
                     class="h-12 font-bold text-center text-base leading-3 text-white rounded-full w-[86px] bg-button-color shadow-buttonShadow">Все</button>
@@ -413,7 +452,7 @@
 
         </ul>
 
-        <div class="grid mt-10 ml-8 mr-8 grid-cols-contentSize-3 gap-x-9 why:mb-20">
+        <div class="grid mt-10 ml-8 mr-8 overflow-x-scroll grid-cols-contentSize-3 gap-x-9 why:mb-20">
             <div
                 class="w-[337px] h-[394px] border-2 border-BorderGray rounded-xl flex flex-col  pl-7 pr-7 pt-7 gap-y-4 items-start">
 
@@ -442,7 +481,7 @@
             </div>
 
             <div
-                class="w-[337px] h-[328px] border-2 relative border-BorderGray rounded-xl flex flex-col  pl-7 pr-7 pt-7 gap-y-3 items-start">
+                class="w-[337px] h-[328px] border-2 relative border-BorderGray rounded-xl flex flex-col  pl-7 pr-7 pt-7 gap-y-3 items-start ">
 
                 <div class="flex flex-row gap-x-10">
                     <p class="text-2xl font-semibold leading-8 text-menu-color">Антон, 20 лет</p>
@@ -466,7 +505,7 @@
                 <img src="./img/Anton.png" alt="" class="absolute right-8">
             </div>
 
-            <!-- <div
+             <div
                 class="w-[400px] h-[320px] border-2 hidden border-BorderGray rounded-xl why:flex flex-col  pl-7 pr-7 pt-7 gap-y-4 items-start">
 
                 <div class="flex flex-row gap-x-10">
@@ -493,7 +532,7 @@
 
 
                 </p>
-            </div> -->
+            </div> 
 
 
 
@@ -512,9 +551,9 @@
 
     </section>
 
-    <section class="bg-[url(../img/content-7bg.png)] h-[383px]">
+    <section class="bg-[url(../img/content-7bg.png)] h-[383px] bg-cover bg-center relative">
         <h5 class="text-4xl leading-7 text-center text-white mt-14">5 причин обратиться к нам</h5>
-
+        <button class="w-[307px] left-40 top-6 h-16 hidden fhd:block  rounded-full bg-kindablue absolute"><p class="text-2xl leading-7 text-white">Оставить свой отзыв</p></button>
         <div
             class="grid grid-flow-col grid-cols-5 grid-rows-2 ml-8 mr-8 font-semibold justify-items-center gap-x-2 mt-11">
 
