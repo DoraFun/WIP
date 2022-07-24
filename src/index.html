@@ -10,85 +10,104 @@
     <title>Document</title>
 </head>
 
-<body class="flex  mx-auto w-[768px] flex-col"> 
+<body class="flex flex-col mx-auto overflow-x-hidden min-w-fit md:min-w-full">
     <!-- DO SOMETHING WITH THIS SHIT WIDTH -->
-    <header class="bg-Header flex-auto h-[1024px] ">
+
+    <header class="bg-Header bg-cover why:bg-big_header why:bg-cover flex-auto h-[1024px] why:h-[720px] ">
 
         <ul
-            class="grid grid-flow-col justify-between auto-cols-max ml-8 text-base leading-5 text-white uppercase mt-5 mr-8 font-semibold">
+            class="grid items-end justify-between grid-flow-col grid-cols-4 mt-5 ml-8 mr-8 text-base font-semibold leading-5 text-white uppercase 1366:items-center 1366:grid-cols-9 justify-items-center ">
+            <img src="./img/svg/logo.svg" alt="logo" class="hidden mt-8 1366:mt-0 1366:block ">
             <li class="">школы</li>
             <li>программы</li>
             <li>визы</li>
             <li>контакты</li>
-            <li class="">+7 (495) 966 41 33</li>
-        </ul>
+            <li class="hidden 1366:block">+7 (495) 966 41 33</li>
 
-        <img src="./img/svg/Rectangle.svg" alt="" class="mt-4 ml-8">
-
-        <div class="grid grid-flow-col auto-cols-max items-end gap-3">
-
-            <img src="./img/svg/logo.svg" alt="logo" class="ml-8 mt-8 mr-[8.688rem]">
+            <img src="./img/svg/Rectangle.svg" alt=""
+                class="col-start-1 col-end-6 row-start-2 row-end-2 w-[95%] 1366:invisible">
 
             <input type="submit" value="Заявка"
-                class="bg-button-color w-32 h-12 text-lg leading-5 text-white rounded-full shadow-buttonShadow">
+                class="hidden w-32 h-12 text-lg leading-5 text-white rounded-full bg-button-color shadow-buttonShadow 1366:list-item 1366:col-start-7">
             <input type="submit" value=""
-                class="h-12 w-12 bg-button-color rounded-full bg-[url('../img/svg/icons/phone.svg')] bg-no-repeat bg-center">
+                class="h-12 w-12 bg-button-color rounded-full bg-[url('../img/svg/icons/phone.svg')] bg-no-repeat hidden 1366:list-item bg-center 1366:col-start-8">
             <input type="submit" value=""
-                class="bg-white w-12 h-12 rounded-full bg-[url('../img/svg/icons/Поиск.svg')] bg-no-repeat bg-center">
+                class="bg-white w-12 h-12 rounded-full bg-[url('../img/svg/icons/Поиск.svg')] bg-no-repeat hidden 1366:list-item bg-center 1366:col-start-9">
+
+        </ul>
+
+
+
+        <div class="grid items-end justify-around grid-flow-col gap-3 mr-9 1366:hidden ">
+
+            <img src="./img/svg/logo.svg" alt="logo" class="mt-8 ">
+            <div class="flex flex-row gap-x-3 ">
+                <p class="hidden pt-2 text-xl leading-6 text-white why:block ">+7 (495) 966 41 33</p>
+                <input type="submit" value="Заявка"
+                    class="w-32 h-12 text-lg leading-5 text-white rounded-full bg-button-color shadow-buttonShadow">
+                <input type="submit" value=""
+                    class="h-12 w-12 bg-button-color rounded-full bg-[url('../img/svg/icons/phone.svg')] bg-no-repeat bg-center">
+                <input type="submit" value=""
+                    class="bg-white w-12 h-12 rounded-full bg-[url('../img/svg/icons/Поиск.svg')] bg-no-repeat bg-center">
+            </div>
+
         </div>
 
-        <div class="grid grid-flow-col mt-[14.688rem] auto-cols-max items-center ml-8 mr-8 justify-between">
+        <div
+            class="grid grid-flow-col mt-[14.688rem] why:mt-28 gap-8 auto-cols-max justify-between items-center ml-8 mr-8 ">
             <input type="submit" value=""
                 class="h-11 w-11 bg-button-color rounded-full bg-[url('../img/svg/icons/Arrow-left.svg')] bg-no-repeat bg-center">
 
-            <p class="text-white text-4xl leading-9 text-center font-semibold ">Обучение и образование за<br> рубежом
+            <p class="text-4xl font-semibold leading-9 text-center text-white ">Обучение и образование за<br> рубежом
                 для детей и взрослых</p>
 
             <input type="submit" value=""
                 class="h-11 w-11 bg-button-color rounded-full bg-[url('../img/svg/icons/Arrow-right.svg')] bg-no-repeat bg-center">
         </div>
 
-        <div class="grid grid-cols-contentSize-2 grid-rows-2  justify-center mt-12">
+        <div
+            class="grid justify-center grid-rows-2 mt-12 why:grid-cols-4 1366:mr-20 1366:ml-20 why:grid-rows-1 grid-cols-contentSize-2">
             <li
-                class="w-[16.6rem] grid grid-flow-col items-center justify-items-center h-16 bg-white list-none text-base leading-5 text-menu-color border-r-menuBorder border-r-2 border-b-2 border-b-menuBorder rounded-tl-lg">
+                class="grid items-center h-16 grid-flow-col text-base leading-5 list-none bg-white border-b-2 border-r-2 rounded-tl-lg justify-items-center text-menu-color border-r-menuBorder border-b-menuBorder why:rounded-none">
                 <img src="./img/svg/icons/Globus.svg" alt=""><span>Страна обучения</span><img
                     src="./img/svg/icons/Arrow-down.svg" alt="">
             </li>
 
             <li
-                class="w-[16.6rem] grid grid-flow-col items-center justify-center h-16 gap-[1.65rem] bg-white list-none text-base leading-5 text-menu-color border-b-menuBorder border-b-2 rounded-tr-lg">
+                class=" grid grid-flow-col why:rounded-none items-center justify-center h-16 gap-[1.65rem] bg-white list-none text-base leading-5 text-menu-color border-b-menuBorder why:border-r-2 border-b-2 rounded-tr-lg">
                 <img src="./img/svg/icons/hat.svg" alt=""><span>Вид образования</span><img
                     src="./img/svg/icons/Arrow-down.svg" alt="">
             </li>
 
             <li
-                class="w-[16.6rem] grid grid-flow-col items-center justify-center h-16 gap-[1.65rem] bg-white list-none text-base leading-5 text-menu-color border-r-menuBorder border-r-2 rounded-bl-lg">
+                class=" grid grid-flow-col why:rounded-none items-center justify-center h-16 gap-[1.65rem] bg-white list-none text-base leading-5 text-menu-color border-r-menuBorder border-r-2 rounded-bl-lg">
                 <img src="./img/svg/icons/tongue.svg" alt=""><span>Иностранный язык</span><img
                     src="./img/svg/icons/Arrow-down.svg" alt="">
             </li>
 
             <div
-                class="bg-button-color w-[16.6rem] h-16 text-lg leading-5 text-center uppercase text-white rounded-tr-lg rounded-br-lg  ">
-                <span class="relative top-6 font-semibold">Показать</span>
+                class="h-16 text-lg leading-5 text-center text-white uppercase rounded-br-lg bg-button-color why:rounded-none ">
+                <span class="relative font-semibold top-6">Показать</span>
             </div>
 
         </div>
 
-        <div class="grid grid-cols-contentSize-4 grid-flow-col mt-52 mr-8 ml-8 justify-between">
+        <div
+            class="grid justify-center grid-flow-col gap-12 ml-8 mr-8 why:gap-20 grid-cols-contentSize-4 mt-52 why:mt-24">
 
-            <p class="text-lg leading-5 font-semibold  text-white">
+            <p class="text-lg font-semibold leading-5 text-white">
                 <span class="text-6xl leading-[59px] text-Numbers">10+</span><br>Лет<br>опыта
             </p>
 
-            <p class="text-lg leading-5 font-semibold text-white">
+            <p class="text-lg font-semibold leading-5 text-white">
                 <span class="text-6xl leading-[59px] text-Numbers">500+</span><br>учебных<br>заведений
             </p>
 
-            <p class="text-lg leading-5 font-semibold text-white">
+            <p class="text-lg font-semibold leading-5 text-white">
                 <span class="text-6xl leading-[59px] text-Numbers">1500+</span><br>Программ<br>обучения
             </p>
 
-            <p class="text-lg leading-5 font-semibold text-white">
+            <p class="text-lg font-semibold leading-5 text-white">
                 <span class="text-6xl leading-[59px] text-Numbers">100%</span><br>зачисленных и<br>поступивших
             </p>
 
@@ -97,16 +116,71 @@
 
 
     </header>
+    <!-- grid grid-flow-row grid-rows-2 grid-cols-7 -->
+    <section
+        class="bg-white h-[247px]  text-base grid grid-flow-col justify-items-center gap-x-12 mr-11 leading-5 text-center text-Dark-gray mt-8 ml-11 overflow-x-scroll why:overflow-x-hidden  ">
+    
+        <div class="flex flex-col items-center justify-around">
+            <img class="w-16 after:content" src="./img/svg/icons/Phone_svg.svg" alt="">
+            <p>WOW сервис</p>
+        </div>
 
-    <section class="bg-white h-[247px] ">
-        f
+        <div class="flex flex-col items-center justify-around">
+            <img class="w-16" src="./img/svg/icons/money_svg.svg" alt="">
+            <p>Официальные цены учебных заведений</p>
+        </div>
+
+        <div class="flex flex-col items-center justify-around">
+            <img class="w-16" src="./img/svg/icons/lupa_svg.svg" alt="">
+            <p>Строгий отбор образовательных учереждений</p>
+        </div>
+
+        <div class="flex flex-col items-center justify-around">
+            <img class="w-16" src="./img/svg/icons/man_svg.svg" alt="">
+            <p>Личный менежер</p>
+        </div>
+
+        <div class="flex flex-col items-center justify-around">
+            <img class="w-16" src="./img/svg/icons/visa_svg.svg" alt="">
+            <p>Визовые услуги любой сложности</p>
+        </div>
+
+        <div class="flex flex-col items-center justify-around">
+            <img class="w-16 " src="./img/svg/icons/sale_svg.svg" alt="">
+            <p class="">Скидки до 10% для постоянных клиентов</p>
+        </div>
+
+        <div class="flex flex-col items-center justify-around">
+            <img class="w-16 " src="./img/svg/icons/hat_svg.svg" alt="">
+            <p class="">Поступление и зачисление в зарубежный ВУЗ</p>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     </section>
 
-    <main class="bg-[url(../img/Main_bg.png)] h-[939px] flex flex-col">
+    <main
+        class="bg-[url(../img/Main_bg.png)] why:bg-[url(../img/Big_main_bg.png)] bg-cover why:bg-center h-[939px] flex flex-col">
 
         <h1 class="font-bold text-4xl leading-9 text-white text-center mt-[4.37rem]">Обучение за рубежом</h1>
 
-        <p class="text-lg leading-6 text-center  text-white mt-8 mr-8 ml-8 ">
+        <p class="mt-8 ml-8 mr-8 text-lg leading-6 text-center text-white ">
             Компания Booking Study помогает получить современное образование за рубежом для детей и взрослых. Мы
             организуем обучение за рубежом по направлениям: языковые курсы, начальное, среднее и высшее образование.
             В каталоге более 500 учебных заведений с описанием стоимости обучения, условий проживания, инфраструктуры
@@ -118,22 +192,495 @@
             принимающих семьях. Обратившись к нам, вы узнаете, как стать студентом элитного европейского или
             американского университета и сколько стоит образование в разных странах. Стоимость обучения за рубежом на
             нашем сайте строго соответствует ценам учебных заведений за границей.<br><br>
-            <span class="text-2xl leading-8 font-semibold ">Мы предлагаем 5 видов образования за рубежом:</span>
+            <span class="text-2xl font-semibold leading-8 ">Мы предлагаем 5 видов образования за рубежом:</span>
         </p>
 
-        <ol class="text-xl leading-7 grid grid-cols-2 grid-rows-3  text-white list-disc list-inside ">
-            <!-- Доделатб -->
+        <ol
+            class="grid items-start grid-cols-2 grid-rows-3 mt-8 ml-20 text-xl leading-7 text-left text-white list-disc list-outside mr-9 list marker:text-button-color gap-x-6">
+ 
             <li>Среднее образование в школах-пансионах для детей от 7 лет</li>
-            <li>Высшее образование в США, Англии, Канаде</li>
-            <li>Языковые курсы английского, немецкого, французского, испанского или итальянского</li>
             <li>Каникулы за рубежом в приключенческом лагере</li>
+            <li>Высшее образование в США, Англии, Канаде</li>
             <li>Бизнес курсы иностранного языка для предпринимателей</li>
+            <li>Языковые курсы английского, немецкого, французского, испанского или итальянского</li>
+
+
         </ol>
 
     </main>
 
-    <footer>
+    <section class="h-[676px] bg-white">
 
+        <p class="font-bold text-4xl leading-7 ml-8 mt-[4.375rem] text-menu-color ">Большой выбор учебных заведений</p>
+
+        <p class="mt-2 ml-8 text-lg font-semibold leading-5 tracking-wide text-LighGray">в странах только с высоким
+            рейтингом по качеству образования</p>
+
+        <!-- <div class="grid items-start justify-between grid-flow-col mt-8 ml-8 mr-8 grid-cols-contentSize-4 "> -->
+        <!-- <div class="flex flex-row mt-8 ml-8 mr-8 "> -->
+        <div class="grid items-center grid-flow-col gap-5 mt-8 ml-8 mr-6 grid-cols-contentSize-6 justify-items-end ">
+            <div
+                class="pt-3 pb-3 pl-5 pr-5 mx-auto text-sm font-semibold leading-4 text-white bg-red-900 bg-no-repeat rounded-full ">
+                Все</div>
+            <div
+                class="pt-3 pb-3 pl-5 mx-auto pr-5 text-sm font-semibold leading-4 bg-no-repeat text-white bg-[url('../img/Brit-button.png')] rounded-full">
+                Великобритания</div>
+            <div
+                class="pt-3 pb-3 pl-5 mx-auto pr-5 text-sm font-semibold leading-4 bg-no-repeat text-white bg-[url('../img/Europe-button.png')] rounded-full">
+                Европа</div>
+            <div
+                class="pt-3 pb-3 pl-5 mx-auto pr-5 text-sm font-semibold leading-4 bg-no-repeat text-white bg-[url('../img/usa-button.png')] rounded-full">
+                Америка</div>
+            <div
+                class="pt-3 pb-3 pl-5 mx-auto pr-5 text-sm font-semibold leading-4 bg-no-repeat text-white bg-[url('../img/canada-button.png')] rounded-full">
+                Канада</div>
+            <div
+                class="pt-3 pb-3 pl-5 mx-auto pr-5 text-sm font-semibold leading-4 bg-no-repeat text-white bg-[url('../img/asia-button.png')] rounded-full">
+                Азия</div>
+
+
+            <div class="justify-center hidden gap-5 why:flex ">
+
+                <button
+                    class="rounded-full shadow-buttonShadow-2 w-11 h-11 bg-no-repeat bg-center  bg-[url('../img/svg/icons/black_arrow_left.svg')]"></button>
+
+                <button
+                    class="rounded-full shadow-buttonShadow-2 w-11 h-11 bg-no-repeat bg-center bg-menu-color bg-[url('../img/svg/icons/Arrow-right.svg')]"></button>
+
+            </div>
+
+        </div>
+
+        <!-- space-evenly -->
+        <div class="grid items-center grid-flow-col gap-8 mt-6 ml-8 mr-8 overflow-x-scroll ">
+            <div class="w-Card h-Card rounded bg-no-repeat   bg-[url('../img/Aus-card.png')] relative">
+                <img src="./img/svg/icons/Aus-flag.svg" alt="" class="float-left">
+                <p class="text-xl font-semibold leading-7 text-white ">Австрия</p>
+                <p class="absolute text-base font-semibold leading-5 text-white left-4 top-2/3">Английский,<br>Немецкий<br><span class="text-2xl">от 167 560 ₽</span></p>
+            </div>
+            <div class="w-Card h-Card rounded bg-no-repeat  bg-[url('../img/Eng-card.png')] relative">
+                <img src="./img/svg/icons/Eng-flag.svg" alt="" class="float-left">
+                <p class="text-xl font-semibold leading-7 text-white ">Англия</p>
+                <p class="absolute text-base font-semibold leading-5 text-white left-4 top-3/4">Английский<br><span class="text-2xl">от 74 560 ₽</span></p>
+            </div>
+            <div class="w-Card h-Card rounded bg-no-repeat  bg-[url('../img/Belg-card.png')] relative">
+                <img src="./img/svg/icons/Belg-flag.svg" alt="" class="float-left">
+                <p class="text-xl font-semibold leading-7 text-white ">Бельгия</p>
+                <p class="absolute text-base font-semibold leading-5 text-white left-4 top-2/3">Английский, Немецкий,<br>Французкий,<br><span class="text-2xl">от 64 560 ₽</span></p>
+            </div>
+
+            <div class="w-Card h-Card rounded bg-no-repeat hidden why:block  bg-[url('../img/Eng-card.png')] relative">
+                <img src="./img/svg/icons/Ger_flag.svg" alt="" class="float-left">
+                <p class="text-xl font-semibold leading-7 text-white ">Германия</p>
+                <p class="absolute text-base font-semibold leading-5 text-white left-4 top-3/4">Английский, Немецкий<br><span class="text-2xl">от 104 560 ₽</span></p>
+            </div>
+
+             <div class="w-Card h-Card rounded bg-no-repeat hidden why:block  bg-[url('../img/irl_card.jpg')] relative">
+                <img src="./img/svg/icons/irl_flag.jpg" alt="" class="float-left">
+                <p class="text-xl font-semibold leading-7 text-white ">Ирландия</p>
+                <p class="absolute text-base font-semibold leading-5 text-white left-4 top-3/4">Английский<br><span class="text-2xl">от 54 560 ₽</span></p>
+            </div> 
+
+             <div class="w-Card h-Card rounded bg-no-repeat hidden why:block  bg-[url('../img/sp_card.png')] relative">
+                <img src="./img/svg/icons/sp_flag.svg" alt="" class="float-left">
+                <p class="text-xl font-semibold leading-7 text-white ">Испания</p>
+                <p class="absolute text-base font-semibold leading-5 text-white left-4 top-3/4">Английский, Немецкий<br><span class="text-2xl">от 167 560 ₽</span></p>
+            </div> 
+
+
+
+        </div>
+
+        <div class="flex justify-center gap-5 mt-12 why:hidden">
+
+            <button
+                class="rounded-full shadow-buttonShadow-2 w-11 h-11 bg-no-repeat bg-center  bg-[url('../img/svg/icons/black_arrow_left.svg')]"></button>
+
+            <button
+                class="rounded-full shadow-buttonShadow-2 w-11 h-11 bg-no-repeat bg-center bg-menu-color bg-[url('../img/svg/icons/Arrow-right.svg')]"></button>
+
+        </div>
+
+
+    </section>
+
+    <section class="bg-[url('../img/content5_bg.png')] bg-center bg-cover  ">
+
+        <h2 class="text-4xl font-bold leading-9 text-center text-white shadow-textShadow mt-14 ">Подготовим к учебе за
+            рубежом</h2>
+
+        <ul
+            class="grid gap-y-1 grid-cols-2 items-start mr-8 ml-[73px] gap-x-16 mt-8 text-xl text-white list-disc list-outside  marker:border-r-4 list font-semibold marker:text-button-color ">
+            <li>Индивидуально подберем учебное заведение</li>
+            <li>Соберем и оформим все необходимые документы для зачисления в школу или ВУЗ</li>
+            <li>Забронируем образовательную программу</li>
+            <li>Составим мотивационное письмо и эссэ</li>
+            <li>Поможем поступить в университет США или Великобритании</li>
+            <li>Зарегистрируем на экзамены SAT, IELTS или TOEFL</li>
+            <li>Проанализируем успеваемость студента</li>
+            <li>Оформим визу TIER 4, F1, Student Permit или Visa D</li>
+
+        </ul>
+
+        <!-- <p class="mt-12 ml-8 mr-8 text-lg leading-5 text-center text-white">Наши менеджеры помогут вам сделать
+            правильный выбор!</p>
+
+        <div class="flex flex-row items-center justify-center gap-8 mt-5">
+            <button
+                class="h-12 text-lg leading-5 text-white rounded-full w-52 bg-button-color shadow-buttonShadow">Оставить
+                заявку</button>
+            <p class="text-2xl leading-8 text-white"> / +7 (495) 966-41-33</p>
+        </div> -->
+
+        <div
+            class="grid items-center justify-center mt-5 mb-20 why:items-end why:grid-cols-contentSize-3 grid-cols-contentSize-2 grid-rows-contentSize-2 gap-y-5 justify-items-center">
+
+            <p class="col-start-1 col-end-3 mt-12 ml-8 mr-8 text-lg leading-5 text-center text-white why:col-end-1 ">
+                Наши менеджеры помогут вам<br class="hidden why:block"> сделать
+                правильный выбор!
+            </p>
+
+            <button
+                class="h-12 text-lg leading-5 text-white rounded-full w-52 bg-button-color shadow-buttonShadow">Оставить
+                заявку
+            </button>
+
+            <p class="pb-2 text-2xl leading-8 text-white why:ml-10"> / +7 (495) 966-41-33</p>
+
+        </div>
+
+
+    </section>
+
+    <section>
+
+        <div class="relative">
+            <img src="./img/content6.png" alt="" class="w-full">
+            <h3 class="absolute ml-8 text-4xl font-bold leading-7 top-[90%] text-menu-color ">Виды образования за
+                рубежом</h3>
+        </div>
+
+        <ul class="grid grid-flow-col gap-10 ml-8 mr-6 grid-cols-contentSize-4 justify-items-end mt-11">
+            <button
+                class="h-14 font-bold text-center text-base leading-3 text-white rounded-full w-[119px] bg-button-color shadow-buttonShadow">Среднее</button>
+            <button
+                class="text-lg font-bold leading-3 underline text-Button-Gray decoration-BorderGray underline-offset-8">Высшее</button>
+            <button
+                class="text-lg font-bold leading-3 underline text-Button-Gray decoration-BorderGray underline-offset-8">Языковые
+                курсы</button>
+            <button
+                class="text-lg font-bold leading-3 underline text-Button-Gray decoration-BorderGray underline-offset-8">Каникулы
+                за рубежом</button>
+
+            <div class="justify-center hidden gap-5 why:flex">
+
+                <button
+                    class="rounded-full shadow-buttonShadow-2 w-11 h-11 bg-no-repeat bg-center  bg-[url('../img/svg/icons/black_arrow_left.svg')]"></button>
+
+                <button
+                    class="rounded-full shadow-buttonShadow-2 w-11 h-11 bg-no-repeat bg-center bg-menu-color bg-[url('../img/svg/icons/Arrow-right.svg')]"></button>
+
+            </div>
+
+        </ul>
+
+        <div class="grid grid-cols-2 ml-8 mr-8 gap-x-10 mt-7">
+            <p class="text-lg leading-6 text-justify text-menu-color">Среднее зарубежное образование - это лучшая
+                инвестиция в будущее ребенка и перспектива поступления в иностранный ВУЗ. Школьники обучаются и живут на
+                территории кампуса учебного заведения, а на каникулы могут приезжать домой к родителям. Существует
+                возможность обучения за границей с проживанием в местной семье.<br><br> Обучение проходит по современным
+                коммуникативным методикам с использованием интерактивных материалов.<br><br> В течении всего учебного
+                периода идет серьезная подготовка к сдаче экзамена, подтверждающий уровень академических знаний. В
+                зависимости от возраста, учеников размещают в комнатах, рассчитанных на одного, двух или нескольких
+                человек.</p>
+            <p class="text-lg leading-6 text-justify text-menu-color">Средние школы принимают детей от 7 лет и работают
+                по принципу пансионов. Частные зарубежные школы следуют высоким стандартам, обладают передовой
+                материальной базой<br><br> и современной инфраструктурой. Наибольшим спросом пользуются школы-пансионы
+                Англии, Швейцарии и США. Школьные программы направлены на комплексное развитие физических и умственных
+                способностей детей.<br><br> По окончании иностранной школы ребенок сможет без проблем поступить в ВУЗ за
+                границей.</p>
+        </div>
+
+        <div class="flex justify-center gap-5 mt-7 why:hidden">
+
+            <button
+                class="rounded-full shadow-buttonShadow-2 w-11 h-11 bg-no-repeat bg-center  bg-[url('../img/svg/icons/black_arrow_left.svg')]"></button>
+
+            <button
+                class="rounded-full shadow-buttonShadow-2 w-11 h-11 bg-no-repeat bg-center bg-menu-color bg-[url('../img/svg/icons/Arrow-right.svg')]"></button>
+
+        </div>
+
+    </section>
+
+    <section>
+        <h4 class="text-4xl leading-7 text-menu-color ml-8 mt-[77px] font-bold">Отзывы</h4>
+
+        <ul class="grid items-center grid-flow-col gap-10 ml-8 mr-6 grid-cols-contentSize-4 justify-items-end mt-11">
+            <div>
+                <button
+                    class="h-12 font-bold text-center text-base leading-3 text-white rounded-full w-[86px] bg-button-color shadow-buttonShadow">Все</button>
+            </div>
+
+            <div class="flex flex-row gap-3">
+                <img src="./img/svg/icons/video.svg" alt="">
+                <button
+                    class="text-lg font-bold leading-3 underline text-Button-Gray decoration-BorderGray underline-offset-8">Видео</button>
+            </div>
+
+            <div class="flex flex-row gap-3">
+                <img src="./img/svg/icons/Gr_hat.svg" alt="">
+                <button
+                    class="text-lg font-bold leading-3 underline text-Button-Gray decoration-BorderGray underline-offset-8">Образование</button>
+            </div>
+
+            <div class="flex flex-row gap-2">
+                <img src="./img/svg/icons/Union.svg" alt="">
+                <button
+                    class="text-lg font-bold leading-3 underline text-Button-Gray decoration-BorderGray underline-offset-8">Виза</button>
+            </div>
+
+            <div class="justify-center hidden gap-5 why:flex">
+
+                <button
+                    class="rounded-full shadow-buttonShadow-2 w-11 h-11 bg-no-repeat bg-center  bg-[url('../img/svg/icons/black_arrow_left.svg')]"></button>
+
+                <button
+                    class="rounded-full shadow-buttonShadow-2 w-11 h-11 bg-no-repeat bg-center bg-menu-color bg-[url('../img/svg/icons/Arrow-right.svg')]"></button>
+
+            </div>
+
+        </ul>
+
+        <div class="grid mt-10 ml-8 mr-8 overflow-x-scroll grid-cols-contentSize-3 gap-x-9 why:mb-20">
+            <div
+                class="w-[337px] h-[394px] border-2 border-BorderGray rounded-xl flex flex-col  pl-7 pr-7 pt-7 gap-y-4 items-start">
+
+                <div class="flex flex-row gap-x-10">
+                    <p class="text-2xl font-semibold leading-8 text-menu-color">Елена, мама<br>Максима 15 лет</p>
+                    <img src="./img/elena.png" alt="">
+
+                </div>
+
+                <div class="relative flex flex-row gap-x-5 right-1">
+                    <img src="./img/svg/icons/Gr_hat.svg" alt="">
+                    <p class="relative text-lg font-semibold leading-5 right-1 text-Button-Gray ">Образование</p>
+                </div>
+
+                <div class="flex flex-row gap-x-5">
+                    <img src="./img/svg/icons/Round_gr.svg" alt="">
+                    <a href=""
+                        class="text-lg font-semibold leading-5 underline text-link decoration-link underline-offset-4">HUMBOLDT</a>
+                </div>
+
+                <p class="text-lg leading-5 text-Dark-gray">Мой сын впервые посетил немецкую языковую школу Humboldt
+                    Institut. Очень понравилась инфраструктура, преподаватели, качество изложения материала, отношение
+                    преподавателей к ученикам.
+
+                </p>
+            </div>
+
+            <div
+                class="w-[337px] h-[328px] border-2 relative border-BorderGray rounded-xl flex flex-col  pl-7 pr-7 pt-7 gap-y-3 items-start ">
+
+                <div class="flex flex-row gap-x-10">
+                    <p class="text-2xl font-semibold leading-8 text-menu-color">Антон, 20 лет</p>
+
+
+                </div>
+
+                <div class="relative flex flex-row gap-x-5 right-1">
+                    <img src="./img/svg/icons/Gr_hat.svg" alt="">
+                    <p class="relative text-lg font-semibold leading-5 right-1 text-Button-Gray ">Образование</p>
+                </div>
+
+                <div class="flex flex-row gap-x-5">
+                    <img src="./img/svg/icons/round_belg.png" alt="">
+                    <a href=""
+                        class="text-lg font-semibold leading-5 underline text-link decoration-link underline-offset-4">France
+                        Langue Paris Notre</a>
+                </div>
+
+                <img src="./img/Video_review.png" alt="">
+                <img src="./img/Anton.png" alt="" class="absolute right-8">
+            </div>
+
+             <div
+                class="w-[400px] h-[320px] border-2 hidden border-BorderGray rounded-xl why:flex flex-col  pl-7 pr-7 pt-7 gap-y-4 items-start">
+
+                <div class="flex flex-row gap-x-10">
+                    <p class="text-2xl font-semibold leading-8 text-menu-color">Виктория Шукалович</p>
+                    <img src="./img/ViKa.png" alt="" class="w-[60px] h-[60px]">
+
+                </div>
+
+                <div class="relative flex flex-row gap-x-5 right-1">
+                    <img src="./img/svg/icons/Gr_hat.svg" alt="">
+                    <p class="relative text-lg font-semibold leading-5 right-1 text-Button-Gray ">Получение визы</p>
+                </div>
+
+                <div class="flex flex-row gap-x-5">
+                    <img src="./img/svg/icons/round_eng.png" alt="">
+                    <a href=""
+                        class="text-lg font-semibold leading-5 underline text-link decoration-link underline-offset-4">Англия</a>
+                </div>
+
+                <p class="text-lg leading-5 text-Dark-gray">Рекомендую всем Booking-study, благодаря профессиональной и
+                    четкой работе которых мы с женой получили визы в Великобританию даже раньше установленного срока и
+                    успели к открытию конференции.
+
+
+
+                </p>
+            </div> 
+
+
+
+        </div>
+
+        <div class="flex justify-center gap-5 mt-12 mb-14 why:hidden">
+
+            <button
+                class="rounded-full shadow-buttonShadow-2 w-11 h-11 bg-no-repeat bg-center  bg-[url('../img/svg/icons/black_arrow_left.svg')]"></button>
+
+            <button
+                class="rounded-full shadow-buttonShadow-2 w-11 h-11 bg-no-repeat bg-center bg-menu-color bg-[url('../img/svg/icons/Arrow-right.svg')]"></button>
+
+        </div>
+
+
+    </section>
+
+    <section class="bg-[url(../img/content-7bg.png)] h-[383px] bg-cover bg-center relative">
+        <h5 class="text-4xl leading-7 text-center text-white mt-14">5 причин обратиться к нам</h5>
+        <button class="w-[307px] left-40 top-6 h-16 hidden fhd:block  rounded-full bg-kindablue absolute"><p class="text-2xl leading-7 text-white">Оставить свой отзыв</p></button>
+        <div
+            class="grid grid-flow-col grid-cols-5 grid-rows-2 ml-8 mr-8 font-semibold justify-items-center gap-x-2 mt-11">
+
+            <img src="./img/svg/icons/7-1.svg" alt="">
+            <p class="text-sm leading-4 text-center text-white">Престижное образование за границей по выгодной цене</p>
+
+            <img src="./img/svg/icons/7-2.png" alt="">
+            <p class="text-sm leading-4 text-center text-white">Экспертная консультация и информационная поддержка во
+                время учебы
+            </p>
+
+            <img src="./img/svg/icons/7-3.png" alt="">
+
+            <p class="text-sm leading-4 text-center text-white">Гарантированное зачисление в учебное заведение за
+                границей</p>
+            <img src="./img/svg/icons/7-4.png" alt="">
+
+            <p class="text-sm leading-4 text-center text-white">Эффективное изучение иностранного языка в США, Англии,
+                Канаде и
+                странах Европы</p>
+
+            <img src="./img/svg/icons/7-5.png" alt="">
+            <p class="text-sm leading-4 text-center text-white">Успешное поступление в американский или европейский
+                университет</p>
+        </div>
+    </section>
+
+    <section>
+        <h6 class="mt-10 text-4xl font-bold leading-7 text-center text-menu-color">Заявка на обучение</h6>
+
+        <p class="mt-5 text-base font-semibold text-center text-LighGray">Наши эксперты помогут подобрать программу
+            обучения за рубежом, а также окажут профессиональную информационную поддержку во время учебы.</p>
+
+        <form action=""
+            class="grid grid-cols-2 grid-rows-3 mt-8 w-[700px] mx-auto border-t-2 rounded-md border-BorderGray">
+
+            <div
+                class=" h-[80px] grid grid-rows-contentSize-2 text-base leading-5 border-b-2 border-r-2 grid-cols-contentSize-5 text-menu-color gap-x-5  pl-6 pt-5 border-l-2">
+                <img src="./img/svg/icons/human.svg" alt=""> <input
+                    class="col-start-2 col-end-10 row-start-2 leading-5 placeholder:text-menu-color placeholder:text-base"
+                    type="text" placeholder="Пушко Александр Николаевич" name="" id=""><span
+                    class="col-start-2 row-start-1 text-base leading-5 text-menu-color">Имя</span>
+            </div>
+
+            <div
+                class=" h-[80px] grid grid-rows-contentSize-2 text-base leading-5 border-b-2 gap-x-5 text-menu-color grid-cols-contentSize-5 pl-6 pt-5 border-r-2">
+                <img src="./img/svg/icons/@.svg" alt=""> <input type="email" name="" id="" placeholder="example@mail.ru"
+                    class="col-start-2 col-end-10 row-start-2 leading-5 "><span>Электронная почта</span>
+            </div>
+
+            <div
+                class=" h-[80px] text-base leading-5 border-r-2 text-menu-color grid grid-rows-contentSize-2 gap-x-5 grid-cols-contentSize-5 pl-6 pt-5  border-l-2">
+                <img src="./img/svg/icons/Телефон.svg" alt=""><input type="tel" name="" id=""
+                    placeholder="Номер телефона"
+                    class="col-start-2 col-end-10 row-start-1 leading-5 placeholder:text-menu-color placeholder:text-base">
+            </div>
+
+            <div
+                class=" h-[80px] text-base leading-5 text-menu-color grid grid-rows-contentSize-2 gap-x-5 grid-cols-contentSize-5 pl-6 pt-5 border-r-2">
+                <img src="./img/svg/icons/glob.svg"><button class="col-start-2 col-end-4 row-start-1 leading-5"><span
+                        class="col-start-2 row-start-1 text-base leading-5 text-menu-color">Страна
+                        обучения</span></button>
+            </div>
+
+            <div
+                class="col-start-1 col-end-3 text-center bg-button-color rounded-br-md rounded-bl-md shadow-buttonShadow ">
+                <input type="submit" value="Отправить заявку"
+                    class="mt-8 text-lg font-semibold leading-5 text-white uppercase ">
+            </div>
+
+
+
+
+        </form>
+
+        <p class="mt-10 text-sm leading-4 text-center text-menu-color">Нажимая кнопку “ОТПРАВИТЬ ЗАЯВКУ” вы
+            подтверждаете что ознакомились и согласны с политикой<br>обработки <a href="" class="text-link">персональных
+                данных</a></p>
+
+    </section>
+
+    <footer
+        class="grid grid-flow-col grid-cols-3 text-sm leading-4 grid-rows-8 text-LighGray ml-5 mt-[261px] why:mt-24">
+
+        <a href="" class="uppercase">выбор страны обучения</a>
+        <a href="" class="uppercase">Учебные заведения</a>
+        <a href="" class="uppercase">языковые курсы за рубежом</a>
+        <a href="" class="uppercase">визовая поддержка</a>
+        <a href="" class="uppercase">услуги</a>
+        <a href="" class="uppercase">отзывы</a>
+        <a href="" class="uppercase">новости</a>
+        <a href="" class="uppercase">эксперты</a>
+        <a href="" class="uppercase">о компании</a>
+        <a href="" class="uppercase">сертификаты</a>
+        <a href="" class="uppercase">пресса</a>
+        <a href="" class="uppercase">сотрудничество</a>
+        <a href="" class="uppercase">акции</a>
+        <a href="" class="uppercase">клиентам</a>
+        <a href="" class="uppercase">partner zone</a>
+        <a href="" class="uppercase">преимущества</a>
+        <a href="" class="uppercase">контакты</a>
+        <a href="" class="text-2xl font-semibold leading-7 uppercase text-menu-color">+7 (495) 966 41 33</a>
+        <div class="flex flex-row items-start text-lg leading-5 text-menu-color gap-x-5"><img
+                src="./img/svg/icons/Subtract.svg" alt=""><a href="" class="mr-2">г. Москва, ул. Маленковская, 32/3,
+                этаж 2, офис
+                5</a></div>
+        <div class="flex flex-row mt-2 ">
+
+            <div class="h-14 w-14 rounded-[10px] shadow-button-shadow-3"><img src="./img/svg/icons/vk.svg" alt=""
+                    class="mx-auto mt-5"></div>
+
+
+
+            <div class="h-14 w-14 rounded-[10px] shadow-button-shadow-3"><img src="./img/svg/icons/Facebook.svg" alt=""
+                    class="mx-auto mt-5"></div>
+
+
+
+            <div class="h-14 w-14 rounded-[10px] shadow-button-shadow-3"><img src="./img/svg/icons/youtube.svg" alt=""
+                    class="mx-auto mt-5"></div>
+
+
+
+            <div class="h-14 w-14 rounded-[10px] shadow-button-shadow-3"><img src="./img/svg/icons/Twitter.svg" alt=""
+                    class="mx-auto mt-5"></div>
+
+        </div>
     </footer>
 
 </body>
